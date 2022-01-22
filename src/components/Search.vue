@@ -12,6 +12,11 @@
         :key="filter.name"
         class="form-select">
         <option
+          v-if="filter.name === 'year'"
+          value="">
+          All Years
+        </option>
+        <option
           v-for="item in filter.items"
           :key="item">
           {{ item }}
@@ -42,7 +47,7 @@ export default {
           name: 'year',
           items: (() => {
             const years = []
-            const thisYear = new Date().getFullYear //2022
+            const thisYear = new Date().getFullYear() //2022
             for (let i = thisYear; i >= 1985; i-=1) {
               years.push(i)
             }
