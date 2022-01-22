@@ -5,6 +5,19 @@
       class="form-control"
       type="text"
       placeholder="Search for Movies, Series & more" />
+    <div class="selects">
+      <select
+        v-for="filter in filters"
+        v-model="$data[filter.name]"
+        :key="filter.name"
+        class="form-select">
+        <option
+          v-for="item in filter.items"
+          :key="item">
+          {{ item }}
+        </option>
+      </select>
+    </div>
   </div>
 </template>
 
@@ -41,3 +54,26 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  > * {
+    margin-right: 10px;
+    font-size: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .selects {
+    display: flex;
+    select {
+      width: 120px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+</style>
