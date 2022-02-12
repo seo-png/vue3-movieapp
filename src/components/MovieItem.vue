@@ -38,7 +38,7 @@ export default {
   overflow: hidden;
   position: relative;
   .info {
-    background-color: rgba($black, .3%);
+    background-color: rgba($black, .3);
     width: 100%;
     padding: 14px;
     font-size: 14px;
@@ -46,6 +46,16 @@ export default {
     position: absolute;
     left: 0;
     bottom: 0;
+    backdrop-filter: blur(10px);
+    .year {
+      color: $primary;
+    }
+    .title {
+      color: $white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
 }
