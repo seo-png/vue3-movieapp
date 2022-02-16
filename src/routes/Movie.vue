@@ -6,7 +6,8 @@
 export default {
   created() {
     this.$store.dispatch('movie/searchMovieWithId', {
-      id: ''
+      //movie/tt123762
+      id: this.$route.params.id
     })
   }
 }
