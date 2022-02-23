@@ -36,7 +36,7 @@ export default {
   .poster {
     flex-shrink: 0;
     width: 500px;
-    height: 500px *3 / 2;
+    height: 500px * 3 / 2;
     margin-right: 70px;
   }
   .specs {
