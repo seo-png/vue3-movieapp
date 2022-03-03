@@ -78,7 +78,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main";
 
 .container {
   display: flex;
@@ -115,13 +114,13 @@ export default {
     .selects {
       margin-right: 0;
       margin-bottom: 10px;
-    }
-    select {
+      select {
       width: 100%;
+      }
     }
-  }
-  .btn {
+    .btn {
     width: 100%;
+    }
   }
 }
 </style>
