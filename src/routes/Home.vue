@@ -16,7 +16,7 @@ export default {
     MovieList
   },
   created() {
-    this.$store.commit('movie/resetMovie')
+    this.$store.commit('movie/resetMovies')
   }
 }
 </script>
