@@ -6,6 +6,7 @@
       target="_blank">
       (c){{ new Date().getFullYear() }}SEOHYUN
     </a>
+    <!-- git test -->
   </footer>
 </template>
 
